@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Home - Mi Proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+
+    <!-- Hoja de estilos CSS Personalizada --> 
+    <link rel="stylesheet" href="css/estilos.css">
+
+  </head>
+
+  <body>
+
+    <div class="min-h-full">
+
+      <!-- Menú -->
+      <nav class="nav flex flex-wrap items-center justify-between px-4 bg-gray-800 px-20">
+        <div class="flex flex-no-shrink items-center mr-6 py-3 text-grey-darkest">
+          <span class="font-semibold text-xl tracking-tight text-white">Mi Proyecto</span>
+        </div>
+
+        <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+        <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none" for="menu-btn">
+          <span class="navicon bg-grey-darkest flex items-center relative"></span>
+        </label>
+
+        <ul class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
+          <li class="border-t md:border-none">
+            <a href="index.html" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold text-white ">Home</a>
+          </li>
+          
+          <li class="border-t md:border-none">
+            <a href="nosotros.html" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-white ">Nosotros</a>
+          </li>
+          
+          <li class="border-t md:border-none">
+            <a href="servicios.html" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-white ">Servicios</a>
+          </li>
+
+          <li class="border-t md:border-none">
+            <a href="contacto.html" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-white ">Contacto</a>
+          </li>
+          
+        </ul>
+      </nav>
+      
+      <main class="mt-10">
+
+        <!-- Newsletter --> 
+        <div class="mx-auto max-w-7xl p-4">
+
+          <h1 class="text-3xl font-extrabold text-center"> Como Usar Tailwind CSS en HTML Puro
+          </h1>
+
+          <div class="w-full mb-4 mt-4">
+            <h1 class="text-2xl font-extrabold text-center"> Newsletter </h1>
+          </div>
+
+          <form method="post">
+            <div class="md:flex md:items-center mb-6">
+
+              <div class="md:w-1/2">
+                <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+                  Email: 
+                </label>
+              </div>
+              <div class="md:w-2/3 mr-2">
+                <input class="appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="email" placeholder="micorreo@mail.com" required>
+              </div>
+              <div class="md:w-2/3">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                Aceptar
+              </button>
+              </div>
+
+            </div> 
+
+
+          </form>
+          
+        </div>
+
+      </main>     
+      
+    </div>
+
+    <!-- Footer --> 
+    <footer class="footer footer-1 bg-gray-100 py-8 sm:py-12 text-center">
+      <div class="container mx-auto">
+        <p>©Mi Proyecto <script>document.write(new Date().getFullYear())</script>. Todos los derechos reservados.</p>        
+      </div>
+    </footer>
+
+  </body>
+</html>
